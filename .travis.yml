@@ -1,10 +1,3 @@
 language: ruby
 rvm:
 - 2.3.1
-deploy:
-  provider: heroku
-  api_key:
-    secure: AUqeOtMTwrjmI7L6ioVGBccR4sxXZ1KkfFL8TYRgNi93OfgGasTa/Sr/Embs2Jix1XKjkXn8wRfbbGJxxLkQ+VIPYEQQJKKznwYkcLk+Nq9/ZwtrOcVzmmhCqDgUuVl2vSxB/Q7Imcp1DP3RaJV8Qk2cqLittYI1QtsdeUabh5opV/4Trgm9RWiytouEq4X6K/xtVLW3DQC3nkJIWRMf1633gVe8KB/zLeyuh9gr6PRFI7rPFel4kGP8XIv6xCOpS3leaDJ+5ZDb3vF2Adin615cX3TCiY11REP4RqbvnLRoq7EIBDrxfuYNiUV9/TKKpUntHlwqafbufIw0Rlo46qajNeAThzczjPdYg3iHnUf+Rnzfjs2fJ7QdDwIwOzoWqystJj/rnilyP/b/mGgdAGHx+tniGOddBHh3rZw5VIv64aIltnjhktHXJ4cBsMXa/s3XDkViItxyK0Gtr+LxFcYMJd38jmB66D8iVokPtOE2+932a3CXtuZ179naK+mjT8F2vupQtg450WR+Axkt65lGNjwv8qmZqxcihw0X4PZreXl6OrXzybtnK5KuguwI4nPXsYMT9tVwpTPLuYQoimKVhBVw2jHHSVnt2Y3Osq6XU1uLk9BtceoJRCYG/w8LefhFqNBfnG2eEUHJPEl50xafNfffDHvMWLfmM4k6QbE=
-  app: murmuring-springs-27327
-  on:
-repo: dsyouness/Projet
