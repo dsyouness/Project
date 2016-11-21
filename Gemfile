@@ -35,6 +35,10 @@ gem 'nominatim', '~> 0.0.5'
 
 gem 'pg', '~> 0.18.4', group: :production
 
+group :production do
+  gem 'rails_12factor'
+end
+
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
 
