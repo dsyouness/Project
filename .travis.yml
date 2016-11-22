@@ -8,3 +8,9 @@ deploy:
 script: 
  - RAILS_ENV=test bundle exec rake db:migrate --trace
  - bundle exec rake
+addons:
+  code_climate:
+    repo_token: 9d370d609b46c32d3e0ee4b5d1b447782583439638d59f7d70822b16d3ee3d8e
+# regular test configuration
+after_success:
+  - bundle exec codeclimate-test-reporter
