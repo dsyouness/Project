@@ -1,11 +1,21 @@
+<div class="container">
+<div class="row">
+  <br>
+  <br>
+  
+</div>  
+
 <h1>Listing students</h1>
 
-<table>
+<table class="table">
   <thead>
     <tr>
       <th>Name</th>
       <th>Surname</th>
       <th>Birthday</th>
+       <th>Show</th>
+       <th>Edit</th>
+       <th>Destroy</th>
       <th colspan="3"></th>
     </tr>
   </thead>
@@ -16,9 +26,11 @@
         <td><%= student.name %></td>
         <td><%= student.surname %></td>
         <td><%= student.birthday %></td>
-        <td><%= link_to 'Show', student %></td>
-        <td><%= link_to 'Edit', edit_student_path(student) %></td>
-        <td><%= link_to 'Destroy', student, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+       
+        <td><button type="button" class="btn btn-success"><span class="glyphicon glyphicon-th-list"></span>  &nbsp; &nbsp;<%= link_to 'Show', student %></button></td>
+        <td><button type="button" class="btn btn-info"><span class="glyphicon glyphicon-edit"></span> &nbsp; &nbsp;<%= link_to 'Edit', edit_student_path(student) %></button></td>
+         <td><button type="button" class="btn btn-danger"><span class="glyphicon glyphicon-trash"></span> &nbsp; &nbsp;<%= link_to 'Destroy', student, method: :delete, data: { confirm: 'Are you sure?' } %></button></td>
+       
       </tr>
     <% end %>
   </tbody>
@@ -26,4 +38,23 @@
 
 <br>
 
-<%= link_to 'New Student', new_student_path %>
+
+<button type="button" class="btn btn-default"><%= link_to 'New Student', new_student_path %></button>
+</div>
+
+<style>
+a {
+    color: black;
+    font-family:candara;
+    text-decoration: none;
+    font-size:14px;
+}
+  a:hover {
+    color: black;
+    font-family:candara;
+    text-decoration: none;
+    font-size:14px;
+    font-style:italic;
+    font-weight: bold;
+}
+</style>
