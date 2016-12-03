@@ -1,5 +1,8 @@
 <p id="notice"><%= notice %></p>
 
+<br>
+<br>
+
 <p>
   <strong>Name:</strong>
   <%= @student.name %>
@@ -19,6 +22,9 @@
   <strong>major:</strong>
   <%= @student.major? %>
 </p>
+<button type="button" class="btn btn-default"><span class="glyphicons glyphicons-edit"></span><%= link_to 'Edit', edit_student_path(@student) %></button>
 
-<%= link_to 'Edit', edit_student_path(@student) %> |
-<%= link_to 'Back', students_path %>
+|
+<button type="button" class="btn btn-default"><span class="glyphicons glyphicons-edit"></span><%= link_to 'Back', students_path %></button>
+
+
